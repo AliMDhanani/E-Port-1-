@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ali Dhanani</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/4f4f9fa716.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <section id="landing-page">
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <!-- HERO -->
+    <section id="hero">
       <nav>
         <h1 class="personal__logo">AD.</h1>
         <ul class="nav__link--list">
@@ -47,14 +50,19 @@
         </ul>
       </nav>
       <header class="header">
+        <!-- <div class="header__text--hidden">
+          <h1 aria-hidden="true">Hello!</h1>
+        </div> -->
         <div class="header__content">
-          <h1 class="title text--accent">I'm Ali Dhanani</h1>
+          <h1 class="title text--accent" data-text="I'm Ali Dhanani">
+            I'm Ali Dhanani
+          </h1>
           <p class="header__para">
             I am a
             <b class="text--accent">frontend software engineer</b> from
             <b class="text--accent">London</b> who is highly passionate about
-            making web applications come to fruition with functionality that
-            provides great user experience!
+            making ideas come to fruition with web development that provides
+            great user experience!
             <br />
             Here is a bit more <b class="text--accent">about me.</b>
           </p>
@@ -64,7 +72,7 @@
               <button class="header__para header__buttons">Projects</button></a
             >,
             <a href="" target="_blank">
-              <button class="header__para header__buttons">CV</button></a
+              <button class="header__para header__buttons">Resume</button></a
             >,
             <a href="" target="_blank">
               <button class="header__para header__buttons">
@@ -99,85 +107,6 @@
         <div class="scroll__icon click"></div>
       </a>
     </section>
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="container">
-        <h1 class="section__heading" data-outline="PROJECTS">PROJECTS</h1>
-      </div>
-      <div class="all__projects">
-        <div class="project">
-          <div class="left">
-            <div class="img">
-              <img src="./assets/project-1.jpg" alt="project" />
-            </div>
-          </div>
-          <div class="right">
-            <h2 class="project__title">Lorem ipsum dolor sit.</h2>
-            <h3 class="project__sub-title">Lorem ipsum dolor sit.</h3>
-            <p class="project__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consequuntur illum repudiandae vero tempora quibusdam totam
-              perspiciatis eaque cupiditate, est explicabo, quo sequi aut
-              aperiam quisquam. Accusamus soluta quidem suscipit aperiam.
-            </p>
-            <div class="project__links">
-              <a href="" class="project__link">Source Code</a>
-              <a href="" class="project__link project__link--outline"
-                ><span>Preview</span>
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="left">
-            <div class="img">
-              <img src="./assets/project-2.jpg" alt="project" />
-            </div>
-          </div>
-          <div class="right">
-            <h2 class="project__title">Lorem ipsum dolor sit.</h2>
-            <h3 class="project__sub-title">Lorem ipsum dolor sit.</h3>
-            <p class="project__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consequuntur illum repudiandae vero tempora quibusdam totam
-              perspiciatis eaque cupiditate, est explicabo, quo sequi aut
-              aperiam quisquam. Accusamus soluta quidem suscipit aperiam.
-            </p>
-            <div class="project__links">
-              <a href="" class="project__link">Source Code</a>
-              <a href="" class="project__link project__link--outline"
-                ><span>Preview</span>
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="left">
-            <div class="img">
-              <img src="./assets/project-3.jpg" alt="project" />
-            </div>
-          </div>
-          <div class="right">
-            <h2 class="project__title">Lorem ipsum dolor sit.</h2>
-            <h3 class="project__sub-title">Lorem ipsum dolor sit.</h3>
-            <p class="project__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Consequuntur illum repudiandae vero tempora quibusdam totam
-              perspiciatis eaque cupiditate, est explicabo, quo sequi aut
-              aperiam quisquam. Accusamus soluta quidem suscipit aperiam.
-            </p>
-            <div class="project__links">
-              <a href="" class="project__link">Source Code</a>
-              <a href="" class="project__link project__link--outline"
-                ><span>Preview</span>
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <script src="cursor.js"></script>
   </body>
 </html>
