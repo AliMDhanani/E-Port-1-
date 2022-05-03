@@ -60,6 +60,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 img {
@@ -70,6 +71,7 @@ img {
 body {
   cursor: none;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 .personal__logo {
@@ -130,6 +132,7 @@ click:active {
   transform-origin: 100% 100%;
   z-index: 999;
   backdrop-filter: grayscale;
+  overflow-x: hidden;
 }
 
 .link-grow {
@@ -376,8 +379,10 @@ nav {
     display: none;
   }
 
-  .social__link {
-    margin: 0 auto;
+  .social__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* END OF TITLE */
